@@ -35,7 +35,7 @@ def main(args):
     # setup dataset and data_loader instances
     test_dataset = PICKDataset(boxes_and_transcripts_folder=args.bt,
                                images_folder=args.impt,
-                               resized_image_size=(480, 960),
+                               resized_image_size=(800, 1200),
                                ignore_error=False,
                                training=False)
     test_data_loader = DataLoader(test_dataset, batch_size=args.bs, shuffle=False,

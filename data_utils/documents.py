@@ -29,7 +29,7 @@ IOBTagsField.vocab = iob_labels_vocab_cls
 
 class Document:
     def __init__(self, boxes_and_transcripts_file: Path, image_file: Path,
-                 resized_image_size: Tuple[int, int] = (480, 960),
+                 resized_image_size: Tuple[int, int] = (800, 1200),
                  iob_tagging_type: str = 'box_level', entities_file: Path = None, training: bool = True,
                  image_index=None):
         '''
